@@ -39,24 +39,27 @@ header h2 {
   color: #000; /* نجوم باللون الأسود قبل الاختيار */
 }
 
-/* ===== التنقل ===== */
+/* ===== التنقل (الراوند) ===== */
 nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  display: flex !important;           /* عرض مرن */
+  flex-direction: column !important;  /* عمودي */
+  align-items: center;                 /* توسيط الأزرار أفقياً */
+  gap: 12px;                           /* مسافة بين الأزرار */
   padding: 12px;
   background: #fff;
   border-bottom: 1px solid #e0e0e0;
 }
 
 nav button {
+  display: block !important;
+  width: 200px !important;            /* عرض ثابت لكل زر */
   padding: 14px;
   border-radius: 8px;
   background: #fff;
   border: 2px solid #2E8B57;
   cursor: pointer;
   font-size: 15px;
-  color: #000; /* نص الأزرار أسود */
+  color: #000; /* نص أسود */
 }
 
 /* ===== الحاوية ===== */
